@@ -29,7 +29,6 @@ import java.util.UUID;
  */
 public class QrCodeRequestExecutor implements RequestExecutor<File, WxMpQrCodeTicket> {
 
-  @Override
   public File execute(CloseableHttpClient httpclient, HttpHost httpProxy, String uri, WxMpQrCodeTicket ticket) throws WxErrorException, ClientProtocolException, IOException {
     if (ticket != null) {
       if (uri.indexOf('?') == -1) {
